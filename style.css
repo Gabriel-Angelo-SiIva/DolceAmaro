@@ -1,0 +1,91 @@
+.cabecalho {
+    position: relative;
+    z-index: 10;
+    background-color: #F3DAAD;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.pesquisa {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 25px;
+    background-color: white;
+    align-items: center;
+    padding-left: 10px;
+    border: 1px solid #333;
+    /* justify-content: center; */
+}
+
+.pesquisa input {
+    border: none;
+    padding: 10px 20px;
+    width: 90%;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.pesquisa img {
+    width: 25px;
+    height: 25px;
+}
+
+.pesquisa input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.botao-menu .menu-icon {
+    width: 35px;
+    cursor: pointer;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4E2E1D;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    color: #cca63e;
+}
+
+.onda {
+    position: relative;
+    z-index: -1;
+    background-color: white;
+    margin-top: -210px;
+    width: 110%;
+}
+
+/* svg {
+  transform: rotate(180deg);
+} */
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 60px;
+    }
+
+    .pesquisa input {
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
