@@ -1,0 +1,192 @@
+.traco:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+div.card {
+    margin: auto;
+    width: 65%;
+    height: auto;
+    min-height: 60vh;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.posicao {
+    margin-top: 90px;
+}
+
+.fundo{
+    background-color: #a8795a;
+}
+
+.frase{
+    color: white;
+}
+
+h1#titulo {
+    color: #795035;
+    font-size: 40pt;
+    font-family: sans-serif;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+form {
+    margin: auto;
+}
+
+form div {
+    margin-bottom: 3.5%;
+}
+
+form input {
+    padding: 1%;
+    border-radius: 5px;
+    border: 2px solid #795035;
+    background-color: white;
+
+}
+
+form input:hover {
+    border-color: #2c1c05;
+    transition: 0.1s;
+}
+
+form input:focus {
+    background-color: beige;
+    box-shadow: 1px 1px 2px black;
+    outline: none;
+}
+
+button#cadastrar {
+    margin: 3% auto 0px auto;
+    font-size: 15pt;
+    padding: 5px;
+    width: 75%;
+    border-radius: 25px;
+    border: 1px solid #795035;
+    background-color: #795035;
+    color: white;
+}
+
+button:hover {
+    background-color: #4e2c15;
+    transition: 0.3s;
+}
+
+p {
+    color: #8b7362;
+}
+
+.login {
+    color: #291405;
+}
+
+
+@media (min-width: 1200px) and (min-height: 720px) {
+    div.card {
+        margin: auto;
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    h1#titulo {
+        margin-top: 5%;
+        font-size: 30pt;
+    }
+
+    form {
+        margin-top: 3%;
+    }
+
+    form div {
+        margin-bottom: 11%;
+    }
+
+    .posicao {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    div.card {
+        width: 90%;
+        height: auto;
+    }
+
+    form button {
+        margin-top: 0px;
+    }
+
+    .cabecalho {
+        background-color: #F3DAAD;
+        padding-bottom: 0.6rem;
+    }
+
+    .botao-menu label {
+        background: #F3DAAD;
+        padding: 6px;
+        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .botao-menu .dropdown-menu {
+        background: #F3DAAD;
+        box-shadow: none;
+        border: none;
+    }
+
+    .botao-menu .dropdown-menu a {
+        color: #4E2E1D;
+    }
+}
+
+.container.position-relative {
+    padding-top: 1rem;
+}
+
+.container.position-relative .card {
+    margin-top: 1.5rem;
+}
+
+.botao-menu {
+    position: relative;
+}
+
+.botao-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    min-width: 180px;
+    z-index: 2000;
+    padding: 6px 0;
+}
+
+.botao-menu .dropdown-menu a {
+    display: block;
+    padding: 8px 14px;
+    color: #4E2E1D;
+    text-decoration: none;
+}
+
+.botao-menu .dropdown-menu a:hover {
+    background: #f7f2ea;
+}
+
+.botao-menu input.menu-toggle:checked~.dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 1199.98px) {
+    .menu {
+        display: none !important;
+    }
+}
